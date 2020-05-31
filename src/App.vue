@@ -5,7 +5,7 @@
         <input 
         type="text" 
         class="search-bar" 
-        placeholder="search your city"
+        placeholder="Search Your City & See Weather"
         v-model="query"
         @keypress='fetchWeather'
         />
@@ -95,8 +95,9 @@ main{
   display: block;
   width: 100%;
   padding: 15px;
-  color: #313131;
-  font-size: 20px;
+  color: #1209d0;
+  text-align: center;
+  font-size: 25px;
   appearance: none;
   border: none;
   outline: none;
@@ -146,5 +147,20 @@ main{
   font-weight: 700;
   font-style: italic;
   box-shadow: 3px 6px rgba(0,0,0,0.25);
+}
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff;
+ text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #fff;
+ text-align: center;
 }
 </style>
